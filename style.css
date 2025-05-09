@@ -222,3 +222,15 @@ body{
 .home-sci a:hover::before{
     width: 100%;
 }
+
+.resume-content h1{
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-bottom: 50px;
+    color: #00abf0;
+}
+
+.resume-content object{
+    padding-left: 25px;
+    padding-right: 25px;
+}
