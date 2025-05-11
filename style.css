@@ -76,24 +76,23 @@ body{
     top: 0; left: 0;
     width: 100%;
     opacity: 0;
-    /* use the same duration as (display + fades) × number of items */
     animation: fadeText 9s infinite;
   }
   
-  /* stagger their start times (every 3s) */
+
 .home-content h3 span:nth-child(1) { animation-delay: 0s; }
 .home-content h3 span:nth-child(2) { animation-delay: 3s; }
 .home-content h3 span:nth-child(3) { animation-delay: 6s; }
   
-  /* keyframes: fade in, stay, fade out */
+
   @keyframes fadeText {
-    0%, 5%   { opacity: 0; }   /* just before fading in */
-    10%, 30% { opacity: 1; }   /* fully visible */
-    35%, 100%{ opacity: 0; }   /* faded out for next cycle */
+    0%, 5%   { opacity: 0; } 
+    10%, 30% { opacity: 1; }   
+    35%, 100%{ opacity: 0; }   
   }
   
 .home-content p{
-    font-size: 16px;
+    font-size: 20px;
     margin: 20px 0 20px;
 }
 
@@ -234,3 +233,83 @@ body{
     padding-left: 25px;
     padding-right: 25px;
 }
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h2 {
+    font-weight: 600;
+    color: #00abf0;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #00abf0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-right{
+    padding-left: 200px;
+    padding-top: 60px;
+}
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #11473e;
+    border-radius: 50px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+
+}
+.contact-inputs:focus{
+    border: 2px solid #002bff;
+}
+.contact-input::placeholder{
+    color: #a9a9a9;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #ffffff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+.contact-left button img{
+    height: 15px;
+}
+.contact-right img{
+    width: 500px;
+}
+@media (max-width:800px) {
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+ }

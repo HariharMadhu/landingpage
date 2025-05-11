@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio - Harihar Madhu</title>
+    <title>Personal Portfolio-Contact</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -20,18 +20,22 @@
         </nav>
     </header>
     <section class="home">
-        <div class="home-content">
-            <h1>Hi, I'm <span style="color: #54c0eb;">Harihar</span></h1>
-            <h3>
-                <span>ECE Student</span>
-                <span>Graphic Designer</span>
-                <span>Web Dev Enthusiast</span>
-              </h3>              
-            <p>Second Year Student @ <b>NIT Calicut</b>. Avid learner for electronics and programming, with strong fundamentals in Python, SQL, HTML, CSS and Javascript. Strong in Graphic Design. Love books and casual badminton games. 
-            </p>
-            <div class="btn-box">
-                <a href="contact.html" class="glow-on-hover">Let's Talk</a>
-            </div>
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST"" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Get in touch</h2>
+                    <h3>Send a message here and I will get back to you as soon as possible</h3>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="08216da3-b0fe-4d30-a8ff-ca4215697b49">
+                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                <button type="submit">Submit <img src="assets/arrow_icon.png" alt=""></button>
+            </form>
+            <div class="contact-right">
+                <img src="assets/right_img.png" alt="">
+            </div>    
         </div>
         <div class="home-sci">
             <a target="_blank" href="https://www.linkedin.com/in/hariharmadhu/"><i class='bx bxl-linkedin-square'></i></a>
