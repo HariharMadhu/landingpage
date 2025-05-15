@@ -13,18 +13,27 @@ body{
 
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: linear-gradient(180deg, #024243, #081b29);;
+    background: linear-gradient(180deg, #024243, #081b29);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    transition: background 0.3s ease, backdrop-filter 0.3s ease;
 }
+
+.header.scrolled {
+    background: rgba(2, 66, 67, 0.6); /* Transparent blur */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .logo{
     font-size: 25px;
     color: #ededed;
@@ -55,6 +64,7 @@ body{
 
 .home-content{
     max-width: 800px;
+    margin: auto;
 }
 
 .home-content h1{
