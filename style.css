@@ -313,6 +313,7 @@ body{
 }
 .contact-right img{
     width: 500px;
+    height: auto;
 }
 @media (max-width:800px) {
     .contact-inputs{
